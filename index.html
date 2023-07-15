@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- <script src="my.js"></script> -->
+    <title>Mariam Sadiq</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="text-box">
+          <!-- <p>Hi,I'M</p> -->
+          <h1>mariam</h1>
+          <h3>Front-end Developer</h3>
+        </div>
+      </div>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html"> about</a></li>
+          <li><a href="project.html"> projects</a></li>
+          <li><a href="contact.html">contact </a></li>
+        </ul>
+      </div>
+      <button type="button" class="lists">I'm here</button>
+    </nav>
+    <header></header>
+  </body>
+  <!-- comment---here start java script part -->
+  <script>
+    const lists = document.querySelector(".lists");
+    const navlinks = document.querySelector(".nav-links");
+    const body = document.querySelector("body");
+    const backChanges = document.querySelectorAll(".back-change img");
+
+    lists.addEventListener("click", () => {
+      navlinks.classList.toggle("my-profile");
+    });
+    backChanges.forEach((img, index) => {
+      img.addEventListener("click", () => {
+        changeBackground(index);
+      });
+    });
+  </script>
+</html>

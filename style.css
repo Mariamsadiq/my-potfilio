@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courgette", Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  list-style: none;
+}
+header {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.logo {
+  margin-left: 40px;
+  line-height: 30px;
+  font-size: 30px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 3), transparent),
+    url("backg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
+}
+.text-box p {
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: -80px;
+}
+.text-box {
+  color: white;
+  position: absolute;
+  bottom: 8%;
+}
+
+.text-box h1 {
+  font-size: 160px;
+  line-height: 120px;
+  margin-left: -30px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url(back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 2s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 200px 0;
+  }
+}
+.text-box h3 {
+  font-size: 30px;
+  line-height: 50px;
+  margin-left: -20px;
+}
+
+.navbar {
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.navbar a {
+  color: white;
+}
+.navbar .logo {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+.navbar .nav-links ul li.active a {
+  color: red;
+  font-weight: 600;
+}
+.lists {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 105px;
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  z-index: 10;
+}
+.lists:hover {
+  background-color: orange;
+}
+
+@media screen {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .lists {
+    display: block;
+  }
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(48, 46, 46, 0.746);
+    backdrop-filter: blue(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  .nav-links.my-profile {
+    margin-left: 0;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+}
+
+/* <!--comment-about page style start here---> */
+.about {
+  /* width: 100%; */
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 3), transparent),
+    url("backg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 7% 5%;
+  /* position: relative; */
+}
+.about img {
+  height: 200%;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+}
+.about-text {
+  width: 550px;
+}
+.main {
+  width: 1130px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2 {
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text p {
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.about-text p2 {
+  color: orange;
+  text-shadow: 5px 5px 10px black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+.lets-talk {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.lets-talk:hover {
+  background-color: transparent;
+  border: 2px solid;
+}
+/* <!--comment-contact page style start here---> */
+section {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 3), transparent),
+    url("backg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0%;
+}
+
+.container2 {
+  /* width: 100%; */
+  padding: 30px 10px;
+  background-size: cover;
+  background-position: center;
+}
+section .container2 {
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  /* z-index: 1000; */
+}
+
+section .container2 .contantinfo {
+  position: relative;
+  top: 110px;
+  width: 300px;
+  /* margin-left: 30px; */
+  /* height: 100%; */
+  background: rgba(255, 166, 0, 0.264);
+
+  background: rgba(186, 177, 160, 0.628);
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 0 20px 20px black; */
+}
+
+section .container2 .contantinfo h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+section .container2 .contantinfo .info {
+  position: relative;
+  margin: 20px 0;
+}
+section .container2 .contantinfo .info li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+section .container2 .contantinfo .info li span {
+  margin-left: 10px;
+  margin-top: 2px;
+  min-width: 30px;
+}
+section .container2 .contantinfo .info li img {
+  max-width: 10%;
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+section .container2 .contantinfo .info li:hover span,
+section .container2 .contantinfo .info li:hover img {
+  opacity: 1;
+}
+section .container2 .contantinfo .sci {
+  position: relative;
+  max-width: 5%;
+  display: flex;
+}
+section .container2 .contantinfo .sci li {
+  list-style: none;
+  margin-right: 15px;
+}
+section .container2 .contantinfo .sci li a {
+  text-decoration: none;
+}
+section .container2 .contantinfo .sci li a img {
+  margin-left: 10px;
+  margin-top: 50px;
+  max-width: 30px;
+  filter: invert(1);
+  opacity: 0.5;
+}
+section .container2 .contantinfo .sci li:hover a img {
+  opacity: 1;
+}
+section .container2 .contactform {
+  position: absolute;
+  padding: 70px 50px;
+  background: rgba(60, 17, 17, 0.564);
+  margin: 80px;
+  margin-left: 20%;
+  /* margin-top: 50px;
+margin-left: 150px; */
+  /* padding-left: 250px; */
+  width: calc(80% - 50px);
+  height: 100%;
+  box-shadow: 10% 50% white;
+}
+section .container2 .contactform h2 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+}
+section .container2 .contactform .formBox {
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+section .container2 .contactform .formBox .inputBox {
+  position: relative;
+  margin: 0 0 35px 0;
+}
+section .container2 .contactform .formBox .inputBox.w50 {
+  width: 47%;
+}
+section .container2 .contactform .formBox .inputBox.w100 {
+  width: 100%;
+}
+section .container2 .contactform .formBox .inputBox input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+/* <!--comment-contact project style start here---> */
+.project {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 3), transparent),
+    url("backg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3% 8%;
+  
+}
+.project .projectform {
+  font-size: 30px;
+  line-height: 120px;
+  color: #fff;
+  -webkit-text-stroke: 1px white;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /* background-color: var(--bg-color); */
+  width: 100%;
+  height: 500px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.card:hover {
+  background-color: grey;
+  color: var(--second-bg-color);
+  cursor: pointer;
+}
+.card-image {
+  height: 100%;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.card-1 {
+  background-image: url(card1.jpg);
+}
+.card-1:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+.card-2 {
+  background-image: url(card2.jpg);
+}
+.card-2:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+.card-3 {
+  background-image: url(card3.jpg);
+}
+.card-3:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}

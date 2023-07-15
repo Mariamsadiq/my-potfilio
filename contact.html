@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Mariam Sadiq</title>
+</head>
+
+<body>
+  <!-- comment---related pages code -->
+  <section>
+    <nav class="navbar">
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html"> about</a></li>
+          <li><a href="project.html"> projects</a></li>
+          <li><a href="contact.html">contact </a></li>
+        </ul>
+      </div>
+      <button type="button" class="lists">I'm here</button>
+    </nav>
+
+    <!-- comment---here start contect page code ------- -->
+
+    <div class="container2">
+      <div class="contantinfo">
+        <div>
+          <h2>Contact info</h2>
+          <ul class="info">
+            <li>
+              <img src="pin.png">
+              <span>
+                Iraq - Baghdad
+               
+              </span>
+            </li>
+            <li>
+               <img src="gmail.png">
+              <span> Mariamsadiq.y@gmail.com </span>
+            </li>
+            <li>
+               <img src="telephone.png">
+              <span> 009647732530467 </span>
+            </li>
+          </ul>
+        <ul class="sci">
+          <li><a href="https://m.facebook.com/people/Mem-Mariam/100016038226146/"><img src="facebook.png" /></a> </li>
+          <li><a href="https://instagram.com/0maream?igshid=OGQ5ZDc2ODk2ZA=="><img src="instagram.png" /></a> </li>
+          <li><a href="https://www.linkedin.com/in/maryamsadiq"><img src="linkedin.png" /></a></li>
+          <li><a href="https://github.com/Mariamsadiq"><img src="github.png" /></a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contactform">
+      <h2>send Message</h2>
+      <div class="formBox">
+        <div class="inputBox w50">
+          <input type="text" name="" required />
+          <span> First Name </span>
+        </div>
+        <div class="inputBox w50">
+          <input type="text" name="" required />
+          <span> Last Name </span>
+        </div>
+
+        <div class="inputBox w50">
+          <input type="text" name="" required />
+          <span> Email Address </span>
+        </div>
+        <div class="inputBox w50">
+          <input type="text" name="" required />
+          <span> Mobile Number</span>
+        </div>
+        <div class="inputBox w100">
+          <textarea type="text" name=""> </textarea>
+          <span> write your message here...</span>
+        </div>
+        <div class="inputBox w100">
+          <input type="Submit" value="send">
+        </div>
+      </div>
+    </div>
+    </div>
+
+    </secion>
+</body>
+<!-- commeent---here start java script part -->
+<script>
+  const lists = document.querySelector(".lists");
+  const navlinks = document.querySelector(".nav-links");
+  const body = document.querySelector("body");
+  const backChanges = document.querySelectorAll(".back-change img");
+
+  lists.addEventListener("click", () => {
+    navlinks.classList.toggle("my-profile");
+  });
+  backChanges.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      changeBackground(index);
+    });
+  });
+</script>
+
+</html>

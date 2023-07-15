@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Mariam Sadiq</title>
+  </head>
+  <body>
+    <!-- comment---related pages code -->
+    <nav class="navbar">
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html"> about</a></li>
+          <li><a href="project.html"> projects</a></li>
+          <li><a href="contact.html">contact </a></li>
+        </ul>
+      </div>
+      <button type="button" class="lists">I'm here</button>
+    </nav>
+    <!-- comment---here start porject page code ------- -->
+    <div class="project">  
+      <div class="projectform">
+        <h2>Projects</h2>
+      </div>  
+      <div class="card">
+        <div class="card-image card-1"></div>
+        <div class="card-image card-2"></div>
+        <div class="card-image card-3"></div>
+      </div>
+    </div>
+    
+  </body>
+  <!-- commeent---here start java script part -->
+  <script>
+    const lists = document.querySelector(".lists");
+    const navlinks = document.querySelector(".nav-links");
+    const body = document.querySelector("body");
+    const backChanges = document.querySelectorAll(".back-change img");
+
+    lists.addEventListener("click", () => {
+      console.log('ghggh');
+      navlinks.classList.toggle("my-profile");
+    });
+    backChanges.forEach((img, index) => {
+      img.addEventListener("click", () => {
+        changeBackground(index);
+      });
+    });
+  </script>
+</html>
